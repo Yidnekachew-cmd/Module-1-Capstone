@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+header {
+  height: 7vh;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  list-style-type: none;
+  padding: 1rem 0 0 1rem;
+  cursor: pointer;
+}
+.hamburger li {
+  background-color: #404042;
+  width: 1.5rem;
+  height: 5px;
+  border-radius: 0.6rem;
+}
+
+.nav-list {
+  display: none;
+}
+
+.home-page {
+  background-color: #d3d3d3;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.home-page .home-container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.home-container .home-para {
+  color: #ec5242;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+  height: max-content;
+}
+
+.home-container .home-title {
+  color: #ec5242;
+  font-size: 3.3rem;
+  font-weight: 900;
+  padding-bottom: 0.7rem;
+  height: max-content;
+  max-width: 500px;
+  min-width: 350px;
+  width: 65%;
+}
+
+.home-container .home-description {
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  border: 1px solid #fff;
+  background-color: #d3d3d3;
+  color: #272a31;
+  margin-bottom: 0.7rem;
+  line-height: 1.5rem;
+  width: 90%;
+  height: min-content;
+}
+
+.home-container .home-info {
+  color: #272a31;
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding-bottom: 0.3rem;
+}
+
+.home-container .info-detail {
+  color: #272a31;
+  font-size: 1.1rem;
+  font-family: 900;
+}
+
+.about-page {
+  background-color: #272a31;
+  height: auto;
+  width: 100%;
+}
+
+.about-page .about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 3rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about-container .about-title {
+  color: #fff;
+  font-size: 2rem;
+}
+
+hr {
+  width: 15%;
+  border: 1px solid #ec5242;
+}
+
+.about-container .program-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.program-list .list-item {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #272a31;
+  background-color: rgb(81, 81, 84);
+  padding: 1rem;
+}
+
+.list-item .item-img {
+  width: 13%;
+  align-items: center;
+}
+
+.item-img img {
+  background-color: #f2e3df;
+}
+
+.list-item .item-title {
+  color: #ec5242;
+  font-size: 1.2rem;
+  max-width: 370px;
+  width: 30%;
+  height: min-content;
+}
+
+.list-item .item-info {
+  color: #d3d3d3;
+  font-size: 1.2rem;
+  max-width: 400px;
+  width: 55%;
+}
+
+.about-container .about-info {
+  color: #d3d3d3;
+  font-size: 1.3rem;
+  padding-bottom: 5rem;
+}
