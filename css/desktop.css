@@ -1,0 +1,160 @@
+@media (min-width: 768px) {
+  header {
+    height: 13vh;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .nav-logo {
+    width: 30%;
+    height: auto;
+    padding-left: 1.5rem;
+    padding-top: 0.3rem;
+  }
+
+  .nav-logo img {
+    width: 40%;
+  }
+
+  .nav-group {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .nav-group .nav-item a {
+    font-size: 1.1rem;
+    color: #272a31;
+    text-decoration: none;
+  }
+
+  .home-page {
+    /* background-position: none; */
+  }
+
+  .home-page .home-container {
+    width: 90%;
+    padding-top: 5rem;
+  }
+
+  .home-container .home-para {
+    font-size: 2.3rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .home-container .home-title {
+    font-size: 3.8rem;
+    max-width: 900px;
+    width: 77%;
+    padding-bottom: 0.7rem;
+    line-height: 4.5rem;
+  }
+
+  .home-container .home-description {
+    width: 70%;
+    font-size: 1.3rem;
+    padding: 1rem;
+    line-height: 1.7rem;
+    margin-bottom: 0.7rem;
+    line-height: 1.8rem;
+  }
+
+  .home-container .home-info {
+    font-size: 1.8rem;
+  }
+
+  .home-container .info-detail {
+    font-size: 1.2rem;
+  }
+
+  .about-page .about-container {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
+
+  .about-container .program-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.2rem;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .program-list .list-item {
+    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+    width: 23%;
+  }
+
+  hr {
+    width: 7%;
+    margin-bottom: 3rem;
+  }
+
+  .list-item .item-img {
+    width: 100%;
+    border: 1px solid red;
+  }
+
+  .list-item .item-title {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .list-item .item-info {
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1020px) {
+  .home-page .home-container {
+    padding-top: 6rem;
+  }
+  .home-container .home-para {
+    font-size: 2.9rem;
+    padding-bottom: 1.3rem;
+  }
+
+  .home-container .home-title {
+    font-size: 4.2rem;
+    padding-bottom: 1rem;
+    /* min-width: 930px; */
+    width: 70%;
+    line-height: 5rem;
+  }
+
+  .home-container .home-description {
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    margin-bottom: 0.7rem;
+    line-height: 2.2rem;
+  }
+
+  .home-container .home-info {
+    font-size: 2.2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .home-container .info-detail {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
