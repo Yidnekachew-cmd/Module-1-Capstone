@@ -15,13 +15,14 @@ header {
 }
 
 .hamburger {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 0.1rem;
   list-style-type: none;
   padding: 1rem 0 0 1rem;
   cursor: pointer;
 }
+
 .hamburger li {
   background-color: #404042;
   width: 1.5rem;
@@ -29,13 +30,71 @@ header {
   border-radius: 0.6rem;
 }
 
-.nav-list {
+.nav-header {
   display: none;
+}
+
+.nav-logo {
+  display: none;
+}
+
+.nav-group {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+  }
+
+  .hamburger.active li:nth-child(2) {
+    opacity: 0;
+    background-color: #fff;
+  }
+
+  .hamburger.active li:nth-child(1) {
+    transform: translateY(6.5px) rotate(45deg);
+    transition: all ease-in-out 1s;
+    background-color: #d3d3d3;
+  }
+
+  .hamburger.active li:nth-child(3) {
+    transform: translateY(-6.5px) rotate(-45deg);
+    transition: all ease-in-out 1s;
+    background-color: #d3d3d3;
+  }
+
+  .nav-group.active {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: rgb(39, 41, 48, 0.7);
+    backdrop-filter: blur(6px);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  .nav-group .nav-item a {
+    font-size: 2.3rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #d3d3d3;
+    text-decoration: none;
+  }
 }
 
 .home-page {
   background-color: #d3d3d3;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-image: url("../images/home-bg.jpg");
   background-repeat: no-repeat;
@@ -46,38 +105,59 @@ header {
 .home-page .home-container {
   width: 90%;
   margin: 0 auto;
-  padding-top: 4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
 }
 
 .home-container .home-para {
   color: #ec5242;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.3rem;
   height: max-content;
 }
 
 .home-container .home-title {
   color: #ec5242;
-  font-size: 3.3rem;
+  font-size: calc(2.7rem + 1.5vw);
   font-weight: 900;
-  padding-bottom: 0.7rem;
+  padding-bottom: 0.5rem;
   height: max-content;
   max-width: 500px;
   min-width: 350px;
-  width: 65%;
+  width: 70%;
+}
+
+.home-container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.home-container-1 .home-title-1 {
+  font-size: 3rem;
+  text-align: center;
 }
 
 .home-container .home-description {
   font-size: 1.2rem;
-  padding: 1.5rem;
-  border: 1px solid #fff;
-  background-color: #d3d3d3;
+  padding: 1rem;
+  border: 4px solid #f3f2f2;
+  background-color: #f2efef;
   color: #272a31;
   margin-bottom: 0.7rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   width: 90%;
-  height: min-content;
+  height: auto;
+}
+
+.home-container-1 .home-desc {
+  font-size: 1.1rem;
+  padding: 1.2rem;
 }
 
 .home-container .home-info {
@@ -87,10 +167,22 @@ header {
   padding-bottom: 0.3rem;
 }
 
+.home-container-1 .info {
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+
 .home-container .info-detail {
   color: #272a31;
-  font-size: 1.1rem;
-  font-family: 900;
+  font-size: 1rem;
+}
+
+.home-container-1 .detail {
+  font-weight: 900;
+  text-decoration: underline;
+  text-align: center;
 }
 
 .about-page {
@@ -165,4 +257,304 @@ hr {
   color: #d3d3d3;
   font-size: 1.3rem;
   padding-bottom: 5rem;
+}
+
+.about {
+  background-color: #fff;
+  height: auto;
+}
+
+.about .about-title-1 {
+  color: #272a31;
+  width: 70%;
+  text-align: center;
+}
+
+.about .about-para {
+  color: #5e5b5b;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.about .logo-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  gap: 1rem;
+  background-color: #f1ebeb;
+  padding: 1rem;
+}
+
+.logo-wraper img {
+  width: 40%;
+}
+
+.logo-wraper h3 {
+  color: #ec5242;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.about-1 {
+  padding-bottom: 3rem;
+}
+
+.about-1 .about-title-2 {
+  width: 80%;
+  color: #272a31;
+  text-align: center;
+}
+
+.about-1 .work-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.work-container .ethiopia {
+  display: flex;
+  width: 90%;
+  padding: 5rem;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/2013.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -3rem;
+}
+
+.work-container .america {
+  display: flex;
+  width: 90%;
+  padding: 5rem;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/2014.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -4rem;
+}
+
+.ethiopia h4 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.ethiopia p {
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: center;
+
+  /* font-weight: 900; */
+}
+
+.america h4 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.america p {
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.separator {
+  width: 100%;
+  border: 1px solid #d3d3d3;
+}
+
+.featured-container {
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.featured-container .featured-title {
+  font-size: 2rem;
+  font-weight: 900;
+  padding-top: 2rem;
+  text-align: center;
+  color: #272a31;
+}
+
+.featured-container hr {
+  width: 25%;
+}
+
+.featured-container .featured-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.featured-group .featured-item-2 {
+  display: none;
+}
+
+.featured-group .featured-item {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured-item .featured-img {
+  width: 30%;
+  padding: 1rem;
+  margin-right: 1.2rem;
+  background-image: url("../images/corner.jpg");
+  background-position: -2.5rem -2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.featured-img img {
+  width: 100%;
+}
+
+.featured-item .featured-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.featured-content h2 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #272a31;
+}
+
+.featured-content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #e57e7e;
+  padding-bottom: 0.2rem;
+}
+
+.featured-content hr {
+  border: 1px solid #d3d3d3;
+  width: 14%;
+}
+
+.featured-content p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #272a31;
+}
+
+.featured-item-1 .last-featured {
+  display: none;
+}
+
+.featured-btn {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.featured-btn span {
+  transform: rotate(90deg);
+  color: #e57e7e;
+}
+
+.footer-page {
+  width: 100%;
+  height: 100vh;
+}
+
+.footer-page .top {
+  background-color: #272a31;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  gap: 2rem;
+}
+
+.top .partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.partners li {
+  color: #d3d3d3;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.top hr {
+  width: 10%;
+}
+
+.top .about-title-1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.footer-page .bottom {
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6rem;
+  gap: 2rem;
+}
+
+.bottom .nav-logo {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-left: 1.5rem;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 70%;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo a h3 {
+  padding-left: 0.3rem;
+  font-style: italic;
+  color: #e57e7e;
+}
+
+.rights p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
 }
