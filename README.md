@@ -37,7 +37,7 @@
 
 > Link to the loom video of the project description.
 
-- [Loom Video Link](https://www.loom.com/share/5439f68a9d7a43fdaea4c2eee54b1c8f)
+- [Loom Video Link](https://www.loom.com/share/77fc4199da5e46078766beec5377f7fc)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
