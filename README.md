@@ -37,7 +37,7 @@
 
 > Link to the loom video of the project description.
 
-- [Loom Video Link](https://www.loom.com/share/77fc4199da5e46078766beec5377f7fc)
+- [Loom Video Link](https://www.loom.com/share/fb6b8eaa56a349b9af44934566c00119)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +147,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please follow my github account. It helps a lot. Much Love.
+If you like this project please follow my github account and please feel free to give a ⭐. It helps a lot. Much Love.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +157,7 @@ If you like this project please follow my github account. It helps a lot. Much L
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank my friends Ermi, Nehmi, Aman a`nd besu.
+I would like to thank <a href="https://www.behance.net/adagio07">Cindy Shin</a> who designed the template for me to have some adjustments.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -165,7 +165,7 @@ I would like to thank my friends Ermi, Nehmi, Aman a`nd besu.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 

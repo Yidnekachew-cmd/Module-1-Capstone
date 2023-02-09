@@ -297,7 +297,7 @@ hr {
 }
 
 .about-1 {
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 .about-1 .about-title-2 {
@@ -327,6 +327,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 -3rem;
+  box-shadow: inset 0 0 0 2000px rgba(241, 42, 20, 0.5);
 }
 
 .work-container .america {
@@ -341,28 +342,34 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 -4rem;
+  box-shadow: inset 0 0 0 2000px rgba(241, 42, 20, 0.5);
+ 
 }
 
 .ethiopia h4 {
   font-size: 2.5rem;
   font-weight: 900;
+  color: #fff;
 }
 
 .ethiopia p {
   font-size: 1.1rem;
   width: 100%;
   text-align: center;
+   color: #fff;
 }
 
 .america h4 {
   font-size: 2.5rem;
   font-weight: 900;
+   color: #fff;
 }
 
 .america p {
   font-size: 1.1rem;
   width: 100%;
   text-align: center;
+   color: #fff;
 }
 
 .separator {
