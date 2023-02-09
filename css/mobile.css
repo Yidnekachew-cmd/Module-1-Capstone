@@ -343,7 +343,6 @@ hr {
   background-size: cover;
   background-position: 0 -4rem;
   box-shadow: inset 0 0 0 2000px rgba(241, 42, 20, 0.5);
- 
 }
 
 .ethiopia h4 {
@@ -356,20 +355,20 @@ hr {
   font-size: 1.1rem;
   width: 100%;
   text-align: center;
-   color: #fff;
+  color: #fff;
 }
 
 .america h4 {
   font-size: 2.5rem;
   font-weight: 900;
-   color: #fff;
+  color: #fff;
 }
 
 .america p {
   font-size: 1.1rem;
   width: 100%;
   text-align: center;
-   color: #fff;
+  color: #fff;
 }
 
 .separator {
