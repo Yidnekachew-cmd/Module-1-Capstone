@@ -94,7 +94,7 @@ header {
 
 .home-page {
   background-color: #d3d3d3;
-  height: 100%;
+  height: auto;
   width: 100%;
   background-image: url("../images/home-bg.jpg");
   background-repeat: no-repeat;
@@ -352,8 +352,6 @@ hr {
   font-size: 1.1rem;
   width: 100%;
   text-align: center;
-
-  /* font-weight: 900; */
 }
 
 .america h4 {
