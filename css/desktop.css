@@ -222,15 +222,16 @@
 
   .about-1 .work-container {
     flex-direction: row;
+    width: 80%;
   }
 
   .work-container .ethiopia {
-    padding: 8rem;
+    padding: 6rem;
     background-position: 0 -6rem;
   }
 
   .work-container .america {
-    padding: 8rem;
+    padding: 6rem;
   }
 
   .ethiopia p {
