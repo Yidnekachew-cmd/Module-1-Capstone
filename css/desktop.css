@@ -103,6 +103,10 @@
     display: none;
   }
 
+  .home-page {
+    margin-top: 2rem;
+  }
+
   .home-page .home-container {
     width: 90%;
     padding-top: 5rem;
@@ -244,12 +248,15 @@
 
   .featured-container hr {
     width: 8%;
+    margin-top: 0;
   }
 
   .featured-container .featured-group {
     flex-direction: row;
-    gap: 7rem;
+    row-gap: 7rem;
     align-items: center;
+    height: auto;
+    margin-top: -4rem;
   }
 
   .featured-group .featured-item {
